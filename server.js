@@ -6,7 +6,32 @@ mongoose.Promise = global.Promise;
 const {PORT, DATABASE_URL} = require('./config');
 const {Restaurant} = require('./models');
 
+const app = express();
 
+app.use(morgan('common'));
+app.use(express.json());
+
+app.get('/posts', (req, res) => {
+    BlogPost
+      .find()
+      .then(posts => {
+        res.json(posts.map(post => post.serialize()));
+      })
+      .catch(err => {
+        console.error(err);
+        res.status(500).json({ error: 'something went terribly wrong' });
+      });
+  });
+
+  app.get('/posts/:id', (req, res) => {
+    BlogPost
+      .findById(req.params.id)
+      .then(post => res.json(post.serialize()))
+      .catch(err => {
+        console.error(err);
+        res.status(500).json({ error: 'something went horribly awry' });
+      });
+  });
 
 
 
