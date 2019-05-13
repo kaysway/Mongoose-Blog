@@ -1,0 +1,24 @@
+{
+  "name": "mongoose-blog-app",
+  "version": "1.0.0",
+  "description": "mongoose blog app",
+  "main": "config.js",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "^6.1.4"
+  },
+  "scripts": {
+    "test": "mocha",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaysway/Mongoose-Blog.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaysway/Mongoose-Blog/issues"
+  },
+  "homepage": "https://github.com/kaysway/Mongoose-Blog#readme"
+}
