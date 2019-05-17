@@ -104,6 +104,19 @@ Author
     }
   });
 });
+
+app.delete('/authors/:id', (req, res) => {
+  BlogPost
+  .remove({ author: req.params.id })
+  .then(() => {
+    console.log(`Deleted blog posts owned by and author with id \`${req.params.id}\``);
+    res.status(204).json({ message: 'success' });
+  });
+})
+.catch(err => {
+  console.error(err);
+  res.status(500).json({ error: 'something went wrong' });
+});
  
 
 app.get('/posts', (req, res) => {
