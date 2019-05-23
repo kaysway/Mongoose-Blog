@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: JMj4vjA97lcAZed155dWHkRDUrml1U+7uBLKUhFxdq03rM2jzLnwX1wq4aVnglbXKjS5EyrZYbagUQbMukdsCsT340gSi8+N42cewyE9ogr1V3lR2eU5wVpvRVol6PkSjdKYyRPWPhzVeOw6/a4OxoXICHrdaasm8ZGVAuyf3o3WUljtRi1Y4QK7Uq+CWvJUiGPxhYyesbcz3aFh/swBN09GtNvaPGm4yIeMAr50ouwNKt4hqFMVIOiFGqxdkEPv+dBuKYL7oLqAgEf37Qv2goZsl6cEBXBWRLKgzWON7NKNMlETTrbQNxqb6Y91ECuHcDoEAkApVW2m/KjbHGcAIApu28Sn8wjaAXDCI/BvDWwbHoEAEpIFEY0h54ww+osSlLR2K+1+HPI7Nr6W0aFwqnS2W6mRyi1uHYTNvUAEoe22VVTEZ5ohCwt+qmFbU0y+9IYXJzUxFn/gCc7fsMFA7+C9EyGIMH8OFDw3HJERlfn9NbYj2xMzVZh9Yqbq18vCnBfM9ZZvJRHAgKikMPOqJKz4B09yOgjqTkgAzYzt+/vuwe5xuxsnN13vNhBnSMl0bVkQbArVqCDs0CvH/3qPT1RdiQw0KuPkCg6jEjpgdm+30uscZfKapqQTRslmB6Y2S3H3saHsibsk3Hcnmf6YWaMUxM701uqunayH15Nd/T0=
+  app: thawing-castle-57945
+  on:
+    repo: kaysway/Mongoose-Blog
