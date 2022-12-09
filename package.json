@@ -4,7 +4,7 @@
   "description": "mongoose blog app",
   "main": "config.js",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "mongoose": "^5.5.7",
     "uuid": "^3.3.2"
   },
